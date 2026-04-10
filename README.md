@@ -1,1 +1,1 @@
-키오스크 고객 등록 페이지 
+키오스크 MAIN with ROBOT ARM

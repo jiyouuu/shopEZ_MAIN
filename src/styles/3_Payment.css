@@ -1,0 +1,110 @@
+.bag {
+    width: 250px;
+    z-index: 20; /* 다른 요소들 위에 위치하게 설정 */
+    justify-content: center; /* 배너를 가로로 중앙 배치 */
+    align-items: center; /* 배너를 세로로 중앙 배치 */
+}
+
+.pack {
+    font-size: 3rem;
+    font-family: 'GongGothicLight';
+    margin-top: 30px;
+    color: #005CB8;
+}
+
+.arrow1, .arrow2 {
+    width: 24px;
+    vertical-align: middle; /* 세로 정렬을 가운데로 맞춤 */
+    display: inline-block; /* 가로로 정렬 */
+    animation: arrow-move 1s infinite ease-in-out; /* 위아래로 움직이는 애니메이션 */
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* 위로 20px 이동 */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cookiepack {
+    width: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    position: relative;
+    z-index: -20; /* 다른 요소들 아래에 위치 */
+    animation: drop-in-out 2.8s infinite ease-in-out; /* 가방 안으로 들어갔다가 다시 나타나는 애니메이션 */
+}
+
+
+
+@keyframes drop-in-out {
+    0% {
+        transform: translateY(0); /* 시작 위치 */
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(120px); /* 가방 안으로 들어가며 사라짐 */
+        opacity: 1; /* 사라짐 */
+    }
+    80% {
+        transform: translateY(100px); /* 다시 위로 올라옴 */
+        opacity: 0; /* 다시 나타남 */
+    }
+    100% {
+        transform: translateY(0); /* 다시 위로 올라옴 */
+        opacity: 0; /* 다시 나타남 */
+    }
+}
+
+/* 갤럭시탭 S8 대응 - 반응형 스타일 */
+@media (min-width: 800px) and (max-width: 1600px) {
+    .bag {
+        width: 480px; /* 가방의 크기를 조금 더 크게 조정 */
+        margin-bottom: 30px;
+        justify-content: center; /* 배너를 가로로 중앙 배치 */
+        align-items: center; /* 배너를 세로로 중앙 배치 */
+    }
+
+    .pack {
+        font-size: 3.5rem; /* 폰트 크기 더 크게 */
+        margin-top: 50px;
+        color: #005CB8;
+    }
+
+    .arrow1, .arrow2 {
+        width: 40px; /* 화살표 크기를 조금 더 크게 조정 */
+    }
+
+    .cookiepack {
+        width: 340px; /* 쿠키 팩의 크기를 더 크게 조정 */
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+    }
+
+    @keyframes drop-in-out {
+        0% {
+            transform: translateY(0); /* 시작 위치 */
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(200px); /* 가방 안으로 들어가며 사라짐 */
+            opacity: 1;
+        }
+        80% {
+            transform: translateY(200px); /* 다시 위로 올라옴 */
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0); /* 다시 위로 올라옴 */
+            opacity: 0;
+        }
+    }
+}

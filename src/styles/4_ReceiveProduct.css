@@ -1,0 +1,76 @@
+.bag2 {
+    width: 300px;
+    z-index: 20; /* 다른 요소들 위에 위치하게 설정 */
+    animation: shake 3s ease-in-out infinite; /* 흔들리는 애니메이션 적용 */
+}
+
+/* 흔들리는 애니메이션 */
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rement {
+    font-size: 2rem;
+    font-family: 'GongGothicLight';
+    margin-top: 30px;
+    color: #343434;
+}
+
+.rement1 {
+    font-size: 2rem;
+    font-family: 'GongGothicLight';
+    margin-top: 10px;
+    color: #343434;
+}
+
+/* 갤럭시탭 S8 대응 - 반응형 스타일 */
+@media (min-width: 800px) and (max-width: 1600px) {
+    .bag2 {
+        width: 480px; /* 가방 크기를 더 크게 조정 */
+        animation: shake 3s ease-in-out infinite; /* 동일한 흔들리는 애니메이션 */
+    }
+
+    .rement {
+        font-size: 3.5rem; /* 폰트 크기를 더 크게 조정 */
+        margin-top: 80px; /* 상단 마진 조정 */
+        color: #005CB8;
+    }
+
+    .rement1 {
+        font-size: 3.5rem; /* 폰트 크기를 더 크게 조정 */
+        margin-top: 5px; /* 상단 마진 조정 */
+    }
+
+    /* 애니메이션 조정 */
+    @keyframes shake {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(5deg); /* 조금 더 작은 각도로 조정 */
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(-5deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}

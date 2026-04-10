@@ -1,0 +1,23 @@
+/* 배너 컨테이너 설정 */
+.banner-container {
+  display: flex;
+  justify-content: center; /* 배너를 가로로 중앙 배치 */
+  align-items: center; /* 배너를 세로로 중앙 배치 */
+  width: 100%; /* 화면에 맞춰 배너 크기 조정 */
+  height: 100%;
+  padding: 0;
+  overflow: hidden; /* 배너가 화면 밖으로 나가지 않도록 설정 */
+  flex-grow: 1; /* 컨테이너가 화면에 꽉 차도록 설정 */
+}
+/* 배너 이미지 설정 */
+.banner-image {
+  width: 100%; /* 배너 이미지를 화면 너비에 맞춰 조정 */
+  height: 100%; /* 배너 이미지를 화면 높이에 맞춰 조정 */
+
+  box-shadow: none; /* 그림자 제거 */
+  transition: all 0.3s ease-in-out;
+}
+/* 모든 요소에서 커서를 숨김 */
+* {
+  cursor: none;
+}

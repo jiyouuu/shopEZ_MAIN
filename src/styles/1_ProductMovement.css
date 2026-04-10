@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+}
+
+.cookies {
+    width: 20%;
+    position: fixed; /* 고정된 위치 설정 */
+    bottom: 10%; /* 아래쪽으로 이동 */
+    /* left: 40%; 중앙에 맞추어 이동 */
+    /* transform: translateX(-50%); 가로 중앙 정렬 */
+}
+.robotarm {
+    position: absolute; /* 절대 위치 */
+    top: 15%; /* 상단에서 조금 떨어진 위치 */
+
+    width: 35%; /* 크기를 적절히 조정 */
+    z-index: -90; /* 다른 요소들 뒤에 위치 */
+    cursor: pointer;
+    animation: moveRobotArm 4s ease-in-out infinite; /* 로봇 팔 애니메이션 */
+}
+.notice1{
+    margin-top: 20px;
+
+}
+/* 로봇 팔 애니메이션 */
+@keyframes moveRobotArm {
+    0% {
+        transform: translateX(20); /* 기본 위치 오른쪽 */
+    }
+    50% {
+        transform: translateX(-10%); /* 약간 왼쪽으로 이동 */
+    }
+    100% {
+        transform: translateX(20); /* 원래 위치로 복귀 */
+    }
+}
+
+/* 글자 애니메이션 */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.moveh1, .moveh2 {
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* 텍스트 크기 */
+    font-family: 'GongGothicLight';
+    margin-bottom: 10px;
+    color: #3184d7;
+}
+
+.moveh2 {
+    color: #005CB8;
+}
+
+.animate .moveh1 span, .animate .moveh2 span {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out forwards;
+}
+
+.animate .moveh1 span:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
+.animate .moveh1 span:nth-child(2) {
+    animation-delay: 0.9s;
+}
+
+.animate .moveh1 span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.animate .moveh1 span:nth-child(4) {
+    animation-delay: 1.1s;
+}
+
+.animate .moveh1 span:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.animate .moveh1 span:nth-child(6) {
+    animation-delay: 1.3s;
+}
+
+.animate .moveh1 span:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.animate .moveh1 span:nth-child(8) {
+    animation-delay: 1.5s;
+}
+
+.animate .moveh1 span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.animate .moveh2 span:nth-child(1) {
+    animation-delay: 1.7s;
+}
+
+.animate .moveh2 span:nth-child(2) {
+    animation-delay: 1.8s;
+}
+
+.animate .moveh2 span:nth-child(3) {
+    animation-delay: 1.9s;
+}
+
+.animate .moveh2 span:nth-child(4) {
+    animation-delay: 2.0s;
+}
+
+.animate .moveh2 span:nth-child(5) {
+    animation-delay: 2.1s;
+}
+
+.animate .moveh2 span:nth-child(6) {
+    animation-delay: 2.2s;
+}
+
+.animate .moveh2 span:nth-child(7) {
+    animation-delay: 2.3s;
+}
+
+.animate .moveh2 span:nth-child(8) {
+    animation-delay: 2.4s;
+}
+
+.animate .moveh2 span:nth-child(9) {
+    animation-delay: 2.5s;
+}
+
+/* 반응형 스타일 - 갤럭시탭 S8 크기 대응 */
+@media (min-width: 800px) and (max-width: 1600px) {
+    .cookies {
+        width: 120%; /* 갤럭시탭에 맞는 크기 */
+        bottom: -3%;
+        /* left: 40%; */
+    }
+
+    .robotarm {
+        width: 30%; /* 로봇 팔 크기 조정 */
+        right: 1%; /* 중앙에 가까운 위치로 조정 */
+
+    }
+
+    .moveh1, .moveh2 {
+        font-family: 'GongGothicLight';
+        font-size: 4rem; /* 텍스트 크기 증가 */
+    }
+    .notice1{
+        margin-top: 30px;
+        font-family: 'GongGothicLight';
+    }
+}

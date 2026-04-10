@@ -1,0 +1,58 @@
+/* 고정된 화면 크기 설정 (세로 모드) */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;  /* 화면 너비에 맞춤 */
+    height: 100vh; /* 화면 높이에 맞춤 */
+    overflow: hidden; /* 스크롤바를 숨김 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* 배경 색상 */
+}
+
+.main-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    height: 100vh; 
+    color: #343434;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    cursor: none;
+}
+
+/* 프로그레스 바 설정 */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; 
+    height: 100%;
+    padding: 0;               /* 패딩 제거 */
+    position: fixed;          /* 페이지 맨 위에 고정 */
+    top: 0;                   /* 최상단에 배치 */
+    left: 0;                  /* 왼쪽에 고정 */
+    z-index: 1;
+    cursor: none;
+}
+
+/* p 태그 스타일 고정 */
+p {
+    font-size: 26px;
+    font-family: 'GongGothicLight';
+}
+
+.logo {
+    width: 300px;
+}
+
+/* 추가된 스타일로 인해 고정된 레이아웃을 유지하도록 함 */
+html, body {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}

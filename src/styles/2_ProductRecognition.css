@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+}
+
+
+/* p 태그 스타일 고정 */
+.recog {
+    font-size: 2.5rem;
+    font-family: 'GongGothicLight';
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 테이블 관련 스타일 */
+.table-header, .th1, .th2, .th3, .th4, .th5, .th6, td {
+    font-family: 'GongGothicLight';
+    text-align: center;
+    font-size: 20px;
+}
+
+.th5 {
+    color: #005CB8;
+    font-family: 'GongGothicLight';
+    border-bottom: 1px solid #ffffff;
+}
+
+.th6 {
+    font-family: 'GongGothicLight';
+    border-bottom: 1px solid #fff;
+}
+
+/* 테이블 기본 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* 테이블 바디 및 푸터 */
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 인식 완료 메시지 */
+.completion-message {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+/*/* 갤럭시탭 S8 대응 - 반응형 디자인 */
+@media (min-width: 800px) and (max-width: 1600px) {
+
+    /* 페이지 레이아웃 */
+    .page-container {
+        justify-content: center; /* 배너를 가로로 중앙 배치 */
+        align-items: center; /* 배너를 세로로 중앙 배치 */
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 100%; /* 페이지 폭을 조정하여 더 많은 정보 표시 */
+    }
+
+    /* 텍스트 크기 조정 */
+    .recog {
+        font-family: 'GongGothicMedium';
+        font-size: 3rem; /* 글자 크기를 줄여서 더 많은 정보를 한눈에 보이게 */
+        margin-bottom: 50px;
+        color: #005CB8;
+    }
+
+    .completion-message {
+        font-family: 'GongGothicLight';
+        font-size: 2.5rem; /* 인식 완료 메시지 크기 조정 */
+        padding-bottom: 10px;
+        margin-top: 50px;
+    }
+    .completion-message2 {
+        font-family: 'GongGothicLight';
+        font-size: 3rem; /* 인식 완료 메시지 크기 조정 */
+        padding-bottom: 10px;
+    }
+
+
+    /* 테이블 레이아웃 조정 */
+    .product-table {
+        width: 100%; /* 테이블 전체 폭 사용 */
+        table-layout: fixed; /* 테이블 레이아웃을 고정으로 변경 */
+    }
+    .product-table2 {
+        width: 100%; /* 테이블 전체 폭 사용 */
+        /* align-items: center; */
+    }
+
+    /* 테이블 헤더 및 데이터 셀 크기 조정 */
+    .th1, .th2, .th3, .th4,  td {
+        font-size: 25px; /* 전체 텍스트 크기 줄이기 */
+        padding: 8px 5px; /* 패딩도 줄여서 공간 확보 */
+        
+    }
+    .th6{
+        font-size: 30px;
+        font-family: 'GongGothicLight';
+        text-align: right; 
+            
+    }
+    .th5{
+        font-size: 30px; 
+        font-family: 'GongGothicLight';
+    }
+    /* 이미지 크기 조정 */
+    .product-image {
+        width: 100px; /* 이미지 크기를 더 줄임 */
+        height: 100px;
+    }
+
+    /* 텍스트 및 레이아웃 조정 */
+    .product-name {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .product-count, .product-price {
+        font-size: 23px; /* 수량과 가격 텍스트 크기 조정 */
+    }
+}

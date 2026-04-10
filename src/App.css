@@ -1,0 +1,72 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* 폰트 설정
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-Black.ttf') format('truetype');
+  font-weight: 900;
+} */
+/*
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./assets/fonts/Pretendard-Thin.ttf') format('truetype');
+  font-weight: 100;
+} */
+
+
+/* 기타 스타일에 따른 정의도 동일하게 추가 가능 */

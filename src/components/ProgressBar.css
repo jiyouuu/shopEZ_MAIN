@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'GongGothicLight';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+}
+
+.MainContainer {
+  width: 100%; /* 가로 크기 꽉 채우기 */
+
+  font-family: 'GongGothicLight';
+  /* margin: 0 auto; */
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+}
+
+.StepContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* 페이지 가로 너비의 80% 사용 */
+  margin-top: 30px;
+  position: relative;
+}
+
+.StepContainer:before {
+  content: '';
+  position: absolute;
+  background: #e7e8f3;
+  height: 4px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.StepContainer:after {
+  content: '';
+  position: absolute;
+  background: #005CB8;
+  height: 4px;
+  width: var(--step-width);
+  top: 50%;
+  transition: 0.4s ease;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.StepWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.StepStyle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid var(--step-border-color);
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StepCount {
+  font-size: 19px;
+  color: #e7e8f3;
+}
+
+@media (max-width: 600px) {
+  .StepCount {
+    font-size: 16px;
+  }
+}
+
+.StepsLabelContainer {
+  position: absolute;
+  width: 100px;
+  top: 80px;
+  left: 55%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.StepLabel {
+  font-size: 26px;
+  color: #005CB8;
+}
+
+@media (max-width: 800px) {
+  .StepLabel {
+    font-size: 16px;
+  }
+}
+
+.CheckMark {
+  font-size: 26px;
+  font-weight: 600;
+  color: #005CB8;
+  transform: scaleX(-1) rotate(-46deg);
+}
+
+/* 반응형 스타일 - 갤럭시탭 S8에 맞춤 */
+@media (min-width: 800px) and (max-width: 1600px) {
+  .MainContainer {
+    width: 100%; /* 가로 크기 꽉 채우기 */
+    margin-top: 50px;
+    height:6%;
+  }
+
+  .StepStyle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .StepCount {
+    font-size: 30px;
+  }
+
+  .StepsLabelContainer {
+    margin-top: 20px;
+    top: 80px;
+  }
+
+  .StepLabel {
+    font-size: 25px;
+  }
+
+  .CheckMark {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'GongGothicLight';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+}
+
+.balloons {
+    position: absolute;
+    top: 0;  /* 상단에 완전히 붙도록 설정 */
+    left: 0;
+    width: 109%;
+    height: 200px; /* 풍선 높이 조절 */
+    display: flex;
+    justify-content: center; /* 풍선들을 중앙에 배치 */
+    z-index: 1;
+    margin: 0;
+  padding: 0;
+}
+
+.pop-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* 컨테이너 내부에서 이미지를 중앙 정렬 */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 200px auto; /* 전체 컨테이너를 화면 가운데에 배치 */
+}
+
+.pop {
+  width: 220%;  /* 이미지의 너비를 140%로 설정하여 크기를 키움 */
+  height: auto; /* 이미지의 비율을 유지하면서 높이를 자동으로 조정 */
+  max-width: 20000px; /* 부모 크기에 맞추지 않고 원래 크기를 유지 */
+  margin: 0 auto; /* 이미지가 중앙에 배치되도록 설정 */
+  display: block;
+  margin-left: 50px; /* 이미지를 조금 더 오른쪽으로 이동 */
+  
+}
+
+
+.pop-text {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 2; /* 텍스트는 이미지 위에, 풍선 아래에 위치 */
+}
+
+
+.welcome {
+  position: absolute;  /* absolute로 위치를 하단에 고정 */
+ bottom: -140px;
+  left: 50%;  /* 수평 중앙 정렬 */
+  transform: translateX(-50%);  /* 정확한 중앙으로 보정 */
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: -116px auto;  /* 이미지가 중앙에 정렬되도록 */
+  padding-bottom: 0;
+  z-index: 9999;  /* 다른 요소들보다 위에 오도록 설정 */
+}
+
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .moveh {
+    font-size: 5rem;
+    font-family: 'GongGothicLight';
+    margin-bottom: 0px;
+    color :#2C3E50;
+    margin: 50px auto;
+  }
+  
+
+  .moveh3 span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    color: #0a3056;
+    margin-bottom: 0px;
+    font-family: 'GongGothicMedium';
+    margin: 20px auto;
+  }
+  
+  .moveh4 span {
+    display: inline-block;
+    color: #005CB8;
+
+    margin-bottom: 0px;
+    font-family: 'GongGothicMedium';
+    margin: 15px auto;
+ 
+  }
+
+  
+  .moveh3 {
+    margin-bottom: 0px;
+  }
+
+  .moveh4 {
+
+    margin-top: 30px;
+  }
+
+  .moveh3 span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .moveh3 span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .moveh3 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .moveh3 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .moveh3 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+
+  .moveh3 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+
+  .moveh3 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .moveh3 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .moveh3 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+
+  .moveh3 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .moveh3 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .moveh3 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .moveh3 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+
+  .moveh3 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+
+  .moveh3 span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+
+  .moveh3 span:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+
+  .moveh3 span:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+
+  .moveh3 span:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+
+  .moveh3 span:nth-child(11) {
+    animation-delay: 1.0s;
+  }
+
+  .moveh3 span:nth-child(12) {
+    animation-delay: 1.1s;
+  }
+
+  .moveh3 span:nth-child(13) {
+    animation-delay: 1.2s;
+  }
